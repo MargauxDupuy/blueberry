@@ -12,7 +12,7 @@ The Blueberry Distrib D8 provides a pre-installed website for Drupal 8 with the 
 
 Get the code source of the profile Blueberry, you can run the command below (replace PROJECT_CODE by the name of your project) :
 ```
-composer create-project MargauxDupuy/blueberry-project --stability=dev PROJECT_CODE
+composer create-project margauxdupuy/blueberry-project --stability=dev PROJECT_CODE
 ```
 
 Command line is not yet ready for the package selection.
