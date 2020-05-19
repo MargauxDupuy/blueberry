@@ -1,0 +1,12 @@
+name: 'Blueberry Development'
+description: 'Modules related to development tools.'
+type: module
+core: 8.x
+version: 8.x-1.0
+package: Blueberry
+dependencies:
+  #core
+  - drupal:field_ui
+  - drupal:views_ui
+  #contrib
+  - devel:devel

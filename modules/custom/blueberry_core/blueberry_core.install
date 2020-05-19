@@ -1,0 +1,46 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the Blueberry Core module.
+ */
+
+use Drupal\user\Entity\User;
+
+/**
+ * Implements hook_install().
+ *
+ * @see system_install()
+ */
+function blueberry_core_install() {
+  // Enable Adminimal Theme as the admin theme.
+  \Drupal::configFactory()
+    ->getEditable('system.theme')
+    ->set('admin', 'adminimal_theme')
+    ->save(TRUE);
+
+  \Drupal::configFactory()
+    ->getEditable('node.settings')
+    ->set('use_admin_theme', TRUE)
+    ->save(TRUE);
+
+  //Assign role 'administrator' to user 1
+  $admin = User::load(1);
+  $admin->addRole('administrator');
+  $admin->save();
+
+  // Create webmaster user.
+  $webmaster = User::create();
+  $webmaster->setPassword('webmaster')
+    ->enforceIsNew()
+    ->setUsername('webmaster')
+    ->addRole('webmaster');
+  $webmaster->save();
+
+  // Only administrator can create accounts.
+  \Drupal::configFactory()
+    ->getEditable('user.settings')
+    ->set('register', USER_REGISTER_ADMINISTRATORS_ONLY)
+    ->save(TRUE);
+}
+

@@ -1,0 +1,12 @@
+name: 'Blueberry Multilingual'
+description: 'Modules related to translations with EN, FR and DE activated.'
+type: module
+core: 8.x
+version: 8.x-1.0
+package: Blueberry
+dependencies:
+  #core
+  - drupal:config_translation
+  - drupal:content_translation
+  - drupal:language
+  - drupal:locale

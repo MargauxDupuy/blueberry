@@ -1,0 +1,29 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the Blueberry Development tools module.
+ */
+
+/**
+ * Implements hook_uninstall().
+ *
+ * @see system_uninstall()
+ */
+function blueberry_dev_uninstall() {
+
+  //Avoid uninstall loop
+  static $process = FALSE;
+
+  if (!$process) {
+    $process = TRUE;
+
+    $dev_modules = [
+      'devel',
+      'field_ui',
+      'views_ui'
+    ];
+
+    \Drupal::service('module_installer')->uninstall($dev_modules);
+  }
+}

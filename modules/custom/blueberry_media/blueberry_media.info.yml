@@ -1,0 +1,10 @@
+name: 'Blueberry Media'
+description: 'Modules and configurations related to Media Image, Video and File.'
+type: module
+core: 8.x
+version: 8.x-1.0
+package: Blueberry
+dependencies:
+  #core
+  - drupal:media
+  - drupal:media_library

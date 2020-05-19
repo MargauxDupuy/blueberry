@@ -1,0 +1,19 @@
+name: 'Blueberry SEO'
+description: 'Modules related to Search Engine Optimization tools.'
+type: module
+core: 8.x
+version: 8.x-1.0
+package: Blueberry
+dependencies:
+  #core
+  - drupal:rdf
+  #contrib
+  - metatag:metatag
+  - metatag:metatag_open_graph
+  - metatag:metatag_facebook
+  - metatag:metatag_twitter_cards
+  - pathauto:pathauto
+  - redirect:redirect
+  - xmlsitemap:xmlsitemap
+
+

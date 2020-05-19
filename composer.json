@@ -1,0 +1,47 @@
+{
+    "name": "MargauxDupuy/blueberry",
+    "description": "Project template for Drupal 8 projects starting with Blueberry Distribution",
+    "type": "drupal-profile",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Margaux Dupuy",
+            "role": "margaux.objectifdev@gmail.com"
+        }
+    ],
+    "repositories": {
+        "composer": {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        }
+    },
+    "require": {
+        "drupal/adminimal_admin_toolbar": "^1.9",
+        "drupal/adminimal_theme": "^1.5",
+        "drupal/chosen": "^2.8",
+        "drupal/config_split": "^1.4",
+        "drupal/ctools": "^3.2",
+        "drupal/devel": "~1.0",
+        "drupal/entity_browser": "^2.2",
+        "drupal/entity_reference_revisions": "^1.6",
+        "drupal/filefield_paths": "^1.0@beta",
+        "drupal/link_attributes": "^1.9",
+        "drupal/menu_block": "^1.5",
+        "drupal/metatag": "~1.0",
+        "drupal/paragraphs": "^1.10",
+        "drupal/pathauto": "~1.0",
+        "drupal/rabbit_hole": "^1.0@beta",
+        "drupal/redirect": "~1.0",
+        "drupal/seckit": "^1.2",
+        "drupal/viewfield": "^3.0@beta",
+        "drupal/xmlsitemap": "^1.0@alpha"
+    },
+    "conflict": {
+        "drupal/drupal": "*"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true
+    }
+}

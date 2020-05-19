@@ -1,0 +1,33 @@
+name: Blueberry
+type: profile
+description: Basic installation to start a Drupal D8 website.
+core: 8.x
+version: 1.0
+distribution:
+  name: Blueberry
+project: blueberry
+
+dependencies:
+  - blueberry_core:blueberry_core
+
+themes:
+  - adminimal_theme
+  - megalith
+
+configurable_modules:
+  blueberry_dev:
+    label: Blueberry Development
+    description: Modules related to development tools.
+    enabled: false
+  blueberry_media:
+    label: Blueberry Media
+    description: Modules and configurations related to Media Image, Video and File.
+    enabled: false
+  blueberry_multilingual:
+    label: Blueberry Multilingual
+    description: Modules related to translations with EN, FR and DE activated.
+    enabled: false
+  blueberry_seo:
+    label: Blueberry SEO
+    description: Modules related to Search Engine Optimization tools.
+    enabled: false
