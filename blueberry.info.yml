@@ -12,7 +12,6 @@ dependencies:
 
 themes:
   - adminimal_theme
-  - megalith
 
 configurable_modules:
   blueberry_dev:
