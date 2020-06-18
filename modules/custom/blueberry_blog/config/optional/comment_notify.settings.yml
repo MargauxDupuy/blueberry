@@ -1,0 +1,20 @@
+bundle_types:
+  - node--article--field_cm_comments
+available_alerts:
+  1: true
+  2: true
+enable_default:
+  watcher: '2'
+  entity_author: false
+mail_templates:
+  watcher:
+    node:
+      subject: '[site:name] : new comment for the post "[node:title]"'
+      body: "Hi [comment-subscribed:author],\r\n\r\n[comment:author] has commented the article : \"[node:title]\"\r\n\r\nYou can see the comment and respond it here : [node:url]\r\n\r\nYou can stop to receive these emails by clicking on \r\n[comment-subscribed:unsubscribe-url]\r\n\r\n-- \r\[site:name]\r\n[site:url]\r\n"
+  entity_author:
+    node:
+      subject: '[site:name] : new comment for your post'
+      body: "Hi [node:author],\r\n\r\nYou have received a comment on: \"[node:title]\"\r\n\r\n----\r\n[comment:field_comment]\r\n----\r\n\r\nYou can view the comment at the following url : [node:url]\r\n"
+_core:
+  default_config_hash: y7oCzsZ-B0R-nyeSFO1f2h9BEChUQGSZT-3cqXd-sLE
+langcode: fr

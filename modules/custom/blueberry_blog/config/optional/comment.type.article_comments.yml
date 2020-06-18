@@ -1,0 +1,8 @@
+uuid: dc9f83cf-89ad-4265-917d-dcabf444b457
+langcode: en
+status: true
+dependencies: {  }
+id: article_comments
+label: 'Article comments'
+target_entity_type_id: node
+description: 'Allows commenting for article content type'

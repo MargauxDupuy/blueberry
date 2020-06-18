@@ -14,6 +14,10 @@ themes:
   - adminimal_theme
 
 configurable_modules:
+  blueberry_blog:
+    label: Blueberry Blog
+    description: Modules and configurations needed to create a blog.
+    enabled: false
   blueberry_dev:
     label: Blueberry Development
     description: Modules related to development tools.

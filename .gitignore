@@ -38,5 +38,5 @@ console*
 # Ignore excluded config
 config/excluded
 
-# Ignore build files
-web/themes/custom/*/assets/*
+# Ignore node_modules folder
+web/themes/custom/*/node_modules/

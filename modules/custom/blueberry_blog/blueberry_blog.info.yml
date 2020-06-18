@@ -1,0 +1,12 @@
+name: 'Blueberry Blog'
+description: 'Modules and configurations needed to create a blog'
+type: module
+core: 8.x
+version: 8.x-1.0
+package: Blueberry
+dependencies:
+  #core
+  - drupal:comment
+  #contrib
+  - drupal:ajax_comments
+  - drupal:comment_notify

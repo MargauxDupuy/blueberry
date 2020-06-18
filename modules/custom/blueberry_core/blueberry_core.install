@@ -29,14 +29,6 @@ function blueberry_core_install() {
   $admin->addRole('administrator');
   $admin->save();
 
-  // Create webmaster user.
-  $webmaster = User::create();
-  $webmaster->setPassword('webmaster')
-    ->enforceIsNew()
-    ->setUsername('webmaster')
-    ->addRole('webmaster');
-  $webmaster->save();
-
   // Only administrator can create accounts.
   \Drupal::configFactory()
     ->getEditable('user.settings')
