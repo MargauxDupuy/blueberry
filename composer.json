@@ -35,9 +35,8 @@
         "drupal/pathauto": "~1.0",
         "drupal/rabbit_hole": "^1.0@beta",
         "drupal/redirect": "~1.0",
-        "drupal/seckit": "^1.2",
-        "drupal/viewfield": "^3.0@beta",
-        "drupal/xmlsitemap": "^1.0@alpha"
+        "drupal/simple_sitemap": "^3.7",
+        "drupal/viewfield": "^3.0@beta"
     },
     "conflict": {
         "drupal/drupal": "*"
