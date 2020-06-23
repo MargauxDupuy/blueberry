@@ -56,6 +56,5 @@ dependencies:
   - menu_block:menu_block
   - paragraphs:paragraphs
   - rabbit_hole:rabbit_hole
-  - seckit:seckit
   - token:token
   - viewfield:viewfield

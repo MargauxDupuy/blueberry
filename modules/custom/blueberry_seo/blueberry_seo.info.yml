@@ -14,6 +14,6 @@ dependencies:
   - metatag:metatag_twitter_cards
   - pathauto:pathauto
   - redirect:redirect
-  - xmlsitemap:xmlsitemap
+  - simple_sitemap:simple_sitemap
 
 
