@@ -15,5 +15,6 @@ dependencies:
   - pathauto:pathauto
   - redirect:redirect
   - simple_sitemap:simple_sitemap
+  - simple_sitemap:simple_sitemap_engines
 
 
